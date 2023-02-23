@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rezzie"
+authors = [{ name = "Anders Goncalves da Silva", email = "andersgs@gmail.com" }]
+description = "A small library to access paths to resources shipped with your package."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["resources", "library"]
+license = { text = "BSD-3-Clause" }
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = ['importlib-resources; python_version<"3.9"']
+dynamic = ["version"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rezzie = ["*.fasta"]
+
+[tool.setuptools.dynamic]
+version = { attr = "rezzie.__version__" }
