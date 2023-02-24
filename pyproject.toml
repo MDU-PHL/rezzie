@@ -7,7 +7,7 @@ name = "rezzie"
 authors = [{ name = "Anders Goncalves da Silva", email = "andersgs@gmail.com" }]
 description = "A small library to access paths to resources shipped with your package."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.6,<4.0"
 keywords = ["resources", "library"]
 license = { text = "BSD-3-Clause" }
 classifiers = ["Programming Language :: Python :: 3"]
