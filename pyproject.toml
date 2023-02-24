@@ -9,7 +9,7 @@ description = "A small library to access paths to resources shipped with your pa
 readme = "README.md"
 requires-python = ">=3.6,<4.0"
 keywords = ["resources", "library"]
-license = { text = "BSD-3-Clause" }
+license = "MIT"
 classifiers = ["Programming Language :: Python :: 3"]
 dependencies = ['importlib-resources; python_version<"3.9"']
 dynamic = ["version"]
