@@ -26,6 +26,13 @@ classifiers = [
 dependencies = ['importlib-resources; python_version<"3.9"']
 dynamic = ["version"]
 
+[project.urls]
+homepage = "https://github.com/MDU-PHL/rezzie"
+repository = "https://github.com/MDU-PHL/rezzie"
+documentation = "https://github.com/MDU-PHL/rezzie/blob/main/README.md"
+issues = "https://github.com/MDU-PHL/rezzie/issues"
+changelog = "https://github.com/MDU-PHL/rezzie/blob/main/CHANGELOG.md"
+
 [project.optional-dependencies]
 test = ["pytest"]
 dev = ["black", "pytest", "isort", "pylint"]
