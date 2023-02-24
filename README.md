@@ -12,8 +12,10 @@ Shipping data files with your Bioinformatic Python packages is a typical pattern
 
 A third-party package called `importlib_resources` provides a nice API to deal with this problem, and in more recent versions of (Python ≥3.9), it has become part of the standard library and is built on the `importlib.resource` API of the standard library.
 
-Here, we provide a simple library that has a single function to access the path to any resource shipped with 
+Here, we provide a simple library that has a single function to access the path to any resource shipped with your package. The function returns a `pathlib.Path` object. You can then read the contents, pass it to a subprocess routine, or do anything else you may need to do.
+We have made it so that it transparently supports versions of Python ≥3.7. When using versions of Python ≥3.9, it uses the standard library `importlib_resources` API. Otherwise, it uses the `importlib_resources` package from PyPI. It will only install the `importlib_resources` package if the Python version requires it. So, it should keep things lean if you use a recent Python version.
 
+For that reason and many more, we recommend using Python ≥3.10. There are significant performance improvements in the standard library importlib API and notable performances in Python overall to warrant the upgrade.
 ## Installation
 
 You can install `rezzie` from PyPI using `pip`:
