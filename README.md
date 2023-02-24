@@ -2,7 +2,7 @@
 package without using the pkg_resources API.
 
 <div align="center">
-    [![Unit tests](https://github.com/MDU-PHL/rezzie/actions/workflows/ci.yml/badge.svg)](https://github.com/MDU-PHL/rezzie/actions/workflows/ci.yml)
+    <img src=https://github.com/MDU-PHL/rezzie/actions/workflows/ci.yml/badge.svg alt='Unit test'>
 </div>
 
 
