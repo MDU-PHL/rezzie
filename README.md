@@ -1,6 +1,11 @@
 `rezzie`: A small library for accessing resources and data shipped with your 
 package without using the pkg_resources API.
 
+<div align="center">
+    [![Unit tests](https://github.com/MDU-PHL/rezzie/actions/workflows/ci.yml/badge.svg)](https://github.com/MDU-PHL/rezzie/actions/workflows/ci.yml)
+</div>
+
+
 ## Background
 
 Shipping data files with your Bioinformatic Python packages is a typical pattern. There are several ways of accessing these data files, but they can be cumbersome and error-prone. One common approach often recommended on StackOverflow is to use the module's `__file__` attribute to find the path of the running script and, from there, find the relative path to the resource. But, this approach is fragile and can easily break if the resource is moved, and it doesn't deal with the case where the resource is in a zip file. Another approach is to use the `pkg_resources` API. But, that module is substantial and has a lot of dependencies, which can cause significant startup times for your command-line tools.
