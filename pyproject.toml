@@ -10,7 +10,19 @@ readme = "README.md"
 requires-python = ">=3.6,<4.0"
 keywords = ["resources", "library"]
 license = "MIT"
-classifiers = ["Programming Language :: Python :: 3"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Bioinformatics :: Bioinformatics Tools",
+    "Development Status :: 5 - Production/Stable",
+]
 dependencies = ['importlib-resources; python_version<"3.9"']
 dynamic = ["version"]
 
