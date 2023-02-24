@@ -55,3 +55,6 @@ profile = "black"
 
 [tool.pylint.format]
 max-line-length = "88"
+
+[tool.pylint.message]
+disable = ["E1101"]
