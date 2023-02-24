@@ -35,7 +35,7 @@ changelog = "https://github.com/MDU-PHL/rezzie/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 test = ["pytest"]
-dev = ["black", "pytest", "isort", "pylint", "twine"]
+dev = ["black", "build", "pytest", "isort", "pylint", "twine"]
 
 [tool.setuptools]
 include-package-data = true
