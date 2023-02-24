@@ -78,3 +78,7 @@ The `my_package/__init__.py` file should look like this:
 
     resource_path = get_path("my_package", "data", "my_resource.txt")
 ```
+
+## Author
+Anders Goncalves da Silva (@andersgs)
+ 
