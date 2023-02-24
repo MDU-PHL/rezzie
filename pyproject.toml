@@ -14,6 +14,10 @@ classifiers = ["Programming Language :: Python :: 3"]
 dependencies = ['importlib-resources; python_version<"3.9"']
 dynamic = ["version"]
 
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["black", "pytest", "isort", "pylint"]
+
 [tool.setuptools]
 include-package-data = true
 
