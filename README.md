@@ -25,7 +25,7 @@ to any resource shipped with your package. The function returns a `pathlib.Path`
 object, which can be used to open the resource as a file and manipulate it as
 is needed by your tool.
 
-We have made it so that it supports versions of Python ≥3.6. When using versions
+We have made it so that it supports versions of Python ≥3.7. When using versions
 of Python ≥3.9, it uses the standard library `importlib_resources` API, otherwise
 it uses the `importlib_resources` package from PyPI. It will only install
 the `importlib_resources` package if the Python version version requires. So, it
@@ -39,7 +39,9 @@ significant performances in Python overall to warrant the upgrade.
 
 You can install `rezzie` from PyPI using `pip`:
 
+```bash
     pip install rezzie
+```
 
 ## Usage
 
