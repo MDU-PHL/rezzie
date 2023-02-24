@@ -20,7 +20,7 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Topic :: Software Development :: Libraries :: Python Modules",
-  "Topic :: Bioinformatics :: Bioinformatics Tools",
+  "Topic :: Bioinformatics :: Bioinformatics",
   "Development Status :: 5 - Production/Stable",
 ]
 dependencies = ['importlib-resources; python_version<"3.9"']
