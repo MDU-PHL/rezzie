@@ -4,7 +4,7 @@ package without using the pkg_resources API or the __file__ attribute.
 """
 
 # package metadata
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 
 # public API
