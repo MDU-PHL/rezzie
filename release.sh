@@ -45,9 +45,12 @@ git tag -a ${TAG} -m "Version ${VERSION}"
 git push origin v${VERSION}
 RELEASE_BODY=`awk '/## \[Unreleased\]/{flag=1;next}/## \[/{flag=0}flag' CHANGELOG.md`; \
 gh release create $TAG --title "Version $VERSION" --notes "$RELEASE_BODY"
-gh release upload $TAG rezzie-${VERSION}.tar.gz
+gh release upload $TAG dist/rezzie-${VERSION}.tar.gz
 gh release upload $TAG dist/rezzie-${VERSION}-py3-none-any.whl
 
+## UPDATE PYPI
+echo "Uploading to PyPI..."
+twine upload dist/*
 
 ## UPDATE CHANGELOG
 echo "Updating changelog..."
