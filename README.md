@@ -3,6 +3,10 @@ package without using the pkg_resources API.
 
 <div align="center">
     <img src=https://github.com/MDU-PHL/rezzie/actions/workflows/ci.yml/badge.svg alt='Unit test'>
+    <a href="https://badge.fury.io/py/rezzie"><img src="https://badge.fury.io/py/rezzie.svg" alt="PyPI version" height="18"></a>
+    <a href="https://zenodo.org/badge/latestdoi/605797500"><img src="https://zenodo.org/badge/605797500.svg" alt="DOI"></a>
+    <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/rezzie">
+
 </div>
 
 
